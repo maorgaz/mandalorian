@@ -1,0 +1,243 @@
+{
+  "@context" : {
+    "belongsTo" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#belongsTo",
+      "@type" : "@id"
+    },
+    "LandVehicle" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#LandVehicle"
+    },
+    "ownsVehicle" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#ownsVehicle",
+      "@type" : "@id"
+    },
+    "directs" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#directs",
+      "@type" : "@id"
+    },
+    "appearsSpecie" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#appearsSpecie",
+      "@type" : "@id"
+    },
+    "Firespray31" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Firespray31"
+    },
+    "planetHasSpecie" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#planetHasSpecie",
+      "@type" : "@id"
+    },
+    "appearsWeapon" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#appearsWeapon",
+      "@type" : "@id"
+    },
+    "Director" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Director"
+    },
+    "appearsCharacter" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#appearsCharacter",
+      "@type" : "@id"
+    },
+    "specieAppearsIn" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#specieAppearsIn",
+      "@type" : "@id"
+    },
+    "Droid" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Droid"
+    },
+    "plays" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#plays",
+      "@type" : "@id"
+    },
+    "hasWheels" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasWheels",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Human" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Human"
+    },
+    "SeriesComposition" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#SeriesComposition"
+    },
+    "Character" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Character"
+    },
+    "Weapon" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Weapon"
+    },
+    "hasEpisode" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasEpisode",
+      "@type" : "@id"
+    },
+    "Speeder" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Speeder"
+    },
+    "Episode" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode"
+    },
+    "isBroadcastedOn" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isBroadcastedOn",
+      "@type" : "@id"
+    },
+    "MiniEpisode" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#MiniEpisode"
+    },
+    "weaponAppearsIn" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#weaponAppearsIn",
+      "@type" : "@id"
+    },
+    "Faction" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Faction"
+    },
+    "GiantPlanet" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#GiantPlanet"
+    },
+    "Person" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Person"
+    },
+    "isFactionOfCharacter" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isFactionOfCharacter",
+      "@type" : "@id"
+    },
+    "Specie" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Specie"
+    },
+    "Actor" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Actor"
+    },
+    "Explosive" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Explosive"
+    },
+    "isIntro" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isIntro",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "Bantha" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Bantha"
+    },
+    "VideoOnDemandService" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#VideoOnDemandService"
+    },
+    "isMainCharacter" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isMainCharacter",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "isOfSpecie" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isOfSpecie",
+      "@type" : "@id"
+    },
+    "SandCrawler" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#SandCrawler"
+    },
+    "directedBy" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#directedBy",
+      "@type" : "@id"
+    },
+    "isSpecieOf" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isSpecieOf",
+      "@type" : "@id"
+    },
+    "DwarfPlanet" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#DwarfPlanet"
+    },
+    "TelevisionChannel" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#TelevisionChannel"
+    },
+    "isSeasonOfSeries" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isSeasonOfSeries",
+      "@type" : "@id"
+    },
+    "Planet" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Planet"
+    },
+    "belongsToFaction" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#belongsToFaction",
+      "@type" : "@id"
+    },
+    "characterAppearsIn" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#characterAppearsIn",
+      "@type" : "@id"
+    },
+    "Broadcast" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Broadcast"
+    },
+    "vehicleName" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#vehicleName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "specieIsFromPlanet" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#specieIsFromPlanet",
+      "@type" : "@id"
+    },
+    "isPlayedBy" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isPlayedBy",
+      "@type" : "@id"
+    },
+    "hasCreationDate" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasCreationDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "broadCastsSeries" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#broadCastsSeries",
+      "@type" : "@id"
+    },
+    "Series" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Series"
+    },
+    "hasSurname" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasSurname",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "StarShip" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#StarShip"
+    },
+    "isEpisodeOfSeason" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isEpisodeOfSeason",
+      "@type" : "@id"
+    },
+    "Jawa" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Jawa"
+    },
+    "Ardennian" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Ardennian"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "NabooN1Starfighter" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#NabooN1Starfighter"
+    },
+    "episodeName" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#episodeName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Vehicle" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Vehicle"
+    },
+    "Firearm" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Firearm"
+    },
+    "StabbingWeapon" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#StabbingWeapon"
+    },
+    "Season" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Season"
+    },
+    "K79S80" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#K79S80"
+    },
+    "hasSeason" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasSeason",
+      "@type" : "@id"
+    },
+    "characterName" : {
+      "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#characterName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    }
+  }
+}

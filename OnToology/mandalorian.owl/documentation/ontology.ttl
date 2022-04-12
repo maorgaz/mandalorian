@@ -1,0 +1,780 @@
+@prefix : <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#> .
+
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian> rdf:type owl:Ontology ;
+                                                                      rdfs:comment "Ontology about the TV serie: The Mandalorian, created by Miguel Ángel Orgaz Salcedo" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#appearsCharacter
+:appearsCharacter rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :characterAppearsIn ;
+                  rdfs:domain :Episode ;
+                  rdfs:range :Character ;
+                  rdfs:comment "Which characters appear in an episode" ;
+                  rdfs:label "appearsCharacter"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#appearsSpecie
+:appearsSpecie rdf:type owl:ObjectProperty ;
+               owl:inverseOf :specieAppearsIn ;
+               rdfs:domain :Episode ;
+               rdfs:range :Specie ;
+               rdfs:comment "Which species appear in an episode" ;
+               rdfs:label "appearsSpecie"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#appearsWeapon
+:appearsWeapon rdf:type owl:ObjectProperty ;
+               owl:inverseOf :weaponAppearsIn ;
+               rdfs:domain :Episode ;
+               rdfs:range :Weapon ;
+               rdfs:comment "Which weapons appear in an episode" ;
+               rdfs:label "appearsWeapon"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#belongsTo
+:belongsTo rdf:type owl:ObjectProperty ;
+           owl:inverseOf :ownsVehicle ;
+           rdfs:domain :Vehicle ;
+           rdfs:range :Character ;
+           rdfs:comment "Who owns a vehicle" ;
+           rdfs:label "belongsTo"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#belongsToFaction
+:belongsToFaction rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :isFactionOfCharacter ;
+                  rdfs:domain :Character ;
+                  rdfs:range :Faction ;
+                  rdfs:comment "To which faction a character belongs" ;
+                  rdfs:label "belongsToFaction"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#broadCastsSeries
+:broadCastsSeries rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :isBroadcastedOn ;
+                  rdfs:domain :Broadcast ;
+                  rdfs:range :Series ;
+                  rdfs:comment "What series a channel or service broadcasts" ;
+                  rdfs:label "broadCastsSeries"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#characterAppearsIn
+:characterAppearsIn rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Character ;
+                    rdfs:range :Episode ;
+                    rdfs:comment "In which episode does a character appear" ;
+                    rdfs:label "characterAppearsIn"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#directedBy
+:directedBy rdf:type owl:ObjectProperty ;
+            owl:inverseOf :directs ;
+            rdfs:domain :Episode ;
+            rdfs:range :Person ;
+            rdfs:comment "Who directed an episode" ;
+            rdfs:label "directedBy"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#directs
+:directs rdf:type owl:ObjectProperty ;
+         rdfs:domain :Person ;
+         rdfs:range :Episode ;
+         rdfs:comment "Which episode is directed by a person" ;
+         rdfs:label "directs"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasEpisode
+:hasEpisode rdf:type owl:ObjectProperty ;
+            owl:inverseOf :isEpisodeOfSeason ;
+            rdfs:domain :Season ;
+            rdfs:range :Episode ;
+            rdfs:comment "Which episodes belong to a season" ;
+            rdfs:label "hasEpisode"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasSeason
+:hasSeason rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isSeasonOfSeries ;
+           rdfs:domain :Series ;
+           rdfs:range :Season ;
+           rdfs:comment "Which seasons belong to a series" ;
+           rdfs:label "hasSeason"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isBroadcastedOn
+:isBroadcastedOn rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Series ;
+                 rdfs:range :Broadcast ;
+                 rdfs:comment "The series is broadcast on a television channel or video-on-demand service." ;
+                 rdfs:label "isBroadcastedOn"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isEpisodeOfSeason
+:isEpisodeOfSeason rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Episode ;
+                   rdfs:range :Season ;
+                   rdfs:comment "Which season an episode belongs to" ;
+                   rdfs:label "isEpisodeOfSeason"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isFactionOfCharacter
+:isFactionOfCharacter rdf:type owl:ObjectProperty ;
+                      rdfs:domain :Faction ;
+                      rdfs:range :Character ;
+                      rdfs:comment "Which characters belong to a faction" ;
+                      rdfs:label "isFactionOfCharacter"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isOfSpecie
+:isOfSpecie rdf:type owl:ObjectProperty ;
+            owl:inverseOf :isSpecieOf ;
+            rdfs:domain :Character ;
+            rdfs:range :Specie ;
+            rdfs:comment "What species is a character" ;
+            rdfs:label "isOfSpecie"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isPlayedBy
+:isPlayedBy rdf:type owl:ObjectProperty ;
+            owl:inverseOf :plays ;
+            rdfs:domain :Character ;
+            rdfs:range :Actor ;
+            rdfs:comment "A character is played by an actor" ;
+            rdfs:label "isPlayedBy"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isSeasonOfSeries
+:isSeasonOfSeries rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Season ;
+                  rdfs:range :Series ;
+                  rdfs:comment "To which series does a season belong" ;
+                  rdfs:label "isSeasonOfSeries"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isSpecieOf
+:isSpecieOf rdf:type owl:ObjectProperty ;
+            rdfs:domain :Specie ;
+            rdfs:range :Character ;
+            rdfs:comment "Which characters belong to a species" ;
+            rdfs:label "isSpecieOf"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#ownsVehicle
+:ownsVehicle rdf:type owl:ObjectProperty ;
+             rdfs:domain :Character ;
+             rdfs:range :Vehicle ;
+             rdfs:comment "Which vehicle owns a character" ;
+             rdfs:label "ownsVehicle"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#planetHasSpecie
+:planetHasSpecie rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :specieIsFromPlanet ;
+                 rdfs:domain :Planet ;
+                 rdfs:range :Specie ;
+                 rdfs:comment "It has the species on a planet" ;
+                 rdfs:label "planetHasSpecie"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#plays
+:plays rdf:type owl:ObjectProperty ;
+       rdfs:domain :Actor ;
+       rdfs:range :Character ;
+       rdfs:comment "An actor plays a character" ;
+       rdfs:label "plays"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#specieAppearsIn
+:specieAppearsIn rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Specie ;
+                 rdfs:range :Episode ;
+                 rdfs:comment "In which episode does a species appear" ;
+                 rdfs:label "specieAppearsIn"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#specieIsFromPlanet
+:specieIsFromPlanet rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Specie ;
+                    rdfs:range :Planet ;
+                    rdfs:comment "Indicates the planet of a species" ;
+                    rdfs:label "specieIsFromPlanet"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#weaponAppearsIn
+:weaponAppearsIn rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Weapon ;
+                 rdfs:range :Episode ;
+                 rdfs:comment "In which episode does a weapon appear" ;
+                 rdfs:label "weaponAppearsIn"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#characterName
+:characterName rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Character ;
+               rdfs:range xsd:string ;
+               rdfs:comment "Character's name" ;
+               rdfs:label "characterName"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#episodeName
+:episodeName rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Episode ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Episode name" ;
+             rdfs:label "episodeName"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasCreationDate
+:hasCreationDate rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :SeriesComposition ;
+                 rdfs:range xsd:dateTime ;
+                 rdfs:comment "Date on which the season or episode was made" ;
+                 rdfs:label "hasCreationDate"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasSurname
+:hasSurname rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Person ;
+            rdfs:range xsd:string ;
+            rdfs:comment "Indicates the person's last name" ;
+            rdfs:label "hasSurname"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasWheels
+:hasWheels rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Vehicle ;
+           rdfs:range xsd:boolean ;
+           rdfs:comment "Indicates whether the vehicle has wheels or not" ;
+           rdfs:label "hasWheels"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isIntro
+:isIntro rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Episode ;
+         rdfs:range xsd:boolean ;
+         rdfs:comment "Indicates whether the episode is an introduction" ;
+         rdfs:label "isIntro"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isMainCharacter
+:isMainCharacter rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Character ;
+                 rdfs:range xsd:boolean ;
+                 rdfs:comment "He is a main character" ;
+                 rdfs:label "isMainCharacter"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#vehicleName
+:vehicleName rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Vehicle ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Name of vehicle" ;
+             rdfs:label "vehicleName"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Actor
+:Actor rdf:type owl:Class ;
+       rdfs:subClassOf :Person ;
+       rdfs:comment "Person who appears in the series playing a character" ;
+       rdfs:label "Actor"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Ardennian
+:Ardennian rdf:type owl:Class ;
+           rdfs:subClassOf :Specie ;
+           rdfs:comment "The Ardennian species" ;
+           rdfs:label "Ardennian"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Bantha
+:Bantha rdf:type owl:Class ;
+        rdfs:subClassOf :Specie ;
+        rdfs:comment "The Bantha species" ;
+        rdfs:label "Bantha"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Broadcast
+:Broadcast rdf:type owl:Class ;
+           rdfs:comment "Where the series is broadcasted" ;
+           rdfs:label "Broadcast"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Character
+:Character rdf:type owl:Class ;
+           rdfs:subClassOf [ rdf:type owl:Restriction ;
+                             owl:onProperty :isPlayedBy ;
+                             owl:allValuesFrom :Actor
+                           ] ;
+           rdfs:comment "Fictional characters in the series" .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Director
+:Director rdf:type owl:Class ;
+          rdfs:subClassOf :Person ;
+          rdfs:comment "Person running the series" ;
+          rdfs:label "Director"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Droid
+:Droid rdf:type owl:Class ;
+       rdfs:subClassOf :Specie ;
+       rdfs:comment "All droids" ;
+       rdfs:label "Droid"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#DwarfPlanet
+:DwarfPlanet rdf:type owl:Class ;
+             rdfs:subClassOf :Planet ;
+             rdfs:label "DwarfPlanet"@en ;
+             rdfs:sameAs "Planets with a radius smaller than 1000km" .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode
+:Episode rdf:type owl:Class ;
+         rdfs:subClassOf :SeriesComposition ;
+         rdfs:comment "Episodes" ;
+         rdfs:label "Episode"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Explosive
+:Explosive rdf:type owl:Class ;
+           rdfs:subClassOf :Weapon ;
+           rdfs:comment "Explosive-type weapons appearing in the series" ;
+           rdfs:label "Explosive"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Faction
+:Faction rdf:type owl:Class ;
+         rdfs:comment "Factions or bands we can find (Resistance, Empire, Jedi, Mandalorians...)" ;
+         rdfs:label "Faction"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Firearm
+:Firearm rdf:type owl:Class ;
+         rdfs:subClassOf :Weapon ;
+         rdfs:comment "Firearms or laser weapons appearing in the series" ;
+         rdfs:label "Firearm"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Firespray31
+:Firespray31 rdf:type owl:Class ;
+             rdfs:subClassOf :StarShip ;
+             rdfs:comment "Star ships type FireSpray31" ;
+             rdfs:label "Firespray31"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#GiantPlanet
+:GiantPlanet rdf:type owl:Class ;
+             rdfs:subClassOf :Planet ;
+             rdfs:label "GiantPlanet"@en ;
+             rdfs:sameAs "Planets with a radius greater than 10000km" .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Human
+:Human rdf:type owl:Class ;
+       rdfs:subClassOf :Specie ;
+       rdfs:comment "The Human species" ;
+       rdfs:label "Human"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Jawa
+:Jawa rdf:type owl:Class ;
+      rdfs:subClassOf :Specie ;
+      rdfs:comment "The Jawa species" ;
+      rdfs:label "Jawa"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#K79S80
+:K79S80 rdf:type owl:Class ;
+        rdfs:subClassOf :LandVehicle ;
+        rdfs:comment "Land Vehicles type K79-S80" ;
+        rdfs:label "K79S80"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#LandVehicle
+:LandVehicle rdf:type owl:Class ;
+             rdfs:subClassOf :Vehicle ;
+             rdfs:comment "Land vehicles appearing" ;
+             rdfs:label "LandVehicle"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#MiniEpisode
+:MiniEpisode rdf:type owl:Class ;
+             rdfs:subClassOf :Episode ;
+             rdfs:label "MiniEpisode"@en ;
+             rdfs:sameAs "An episode with a duration of less than 15 minutes" .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#NabooN1Starfighter
+:NabooN1Starfighter rdf:type owl:Class ;
+                    rdfs:subClassOf :StarShip ;
+                    rdfs:comment "Star ships type Naboo N-1 Starfighter" ;
+                    rdfs:label "NabooN1Starfighter"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Person
+:Person rdf:type owl:Class ;
+        rdfs:comment "Persons" ;
+        rdfs:label "Person"@en ;
+        rdfs:sameAs "https://dbpedia.org/ontology/Person" .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Planet
+:Planet rdf:type owl:Class ;
+        rdfs:comment "Planets" ;
+        rdfs:label "Planet"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#SandCrawler
+:SandCrawler rdf:type owl:Class ;
+             rdfs:subClassOf :LandVehicle ;
+             rdfs:comment "Land Vehicles type sand crawlers" ;
+             rdfs:label "SandCrawler"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Season
+:Season rdf:type owl:Class ;
+        rdfs:subClassOf :SeriesComposition ;
+        rdfs:comment "Seasons" ;
+        rdfs:label "Season"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Series
+:Series rdf:type owl:Class ;
+        rdfs:comment "Class representing the television series" ;
+        rdfs:label "Series"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#SeriesComposition
+:SeriesComposition rdf:type owl:Class ;
+                   rdfs:comment "What parts make up the series" ;
+                   rdfs:label "SeriesComposition"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Specie
+:Specie rdf:type owl:Class ;
+        rdfs:comment "Existing species" ;
+        rdfs:label "Specie"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Speeder
+:Speeder rdf:type owl:Class ;
+         rdfs:subClassOf :LandVehicle ;
+         rdfs:comment "Land Vehicles type speeders" ;
+         rdfs:label "Speeder"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#StabbingWeapon
+:StabbingWeapon rdf:type owl:Class ;
+                rdfs:subClassOf :Weapon ;
+                rdfs:comment "Stabbing weapons appearing in the series" ;
+                rdfs:label "StabbingWeapon"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#StarShip
+:StarShip rdf:type owl:Class ;
+          rdfs:subClassOf :Vehicle ;
+          rdfs:comment "Star ships appearing" ;
+          rdfs:label "StarShip"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#TelevisionChannel
+:TelevisionChannel rdf:type owl:Class ;
+                   rdfs:subClassOf :Broadcast ;
+                   rdfs:comment "Television channels where the series is broadcasted" ;
+                   rdfs:label "TelevisionChannel"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Vehicle
+:Vehicle rdf:type owl:Class ;
+         rdfs:comment "Vehicles appearing in The Mandalorian" ;
+         rdfs:label "Vehicle"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#VideoOnDemandService
+:VideoOnDemandService rdf:type owl:Class ;
+                      rdfs:subClassOf :Broadcast ;
+                      rdfs:comment "Video-on-demand services where the series is broadcasted" ;
+                      rdfs:label "VideoOnDemandService"@en .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Weapon
+:Weapon rdf:type owl:Class ;
+        rdfs:comment "Weapons appearing" ;
+        rdfs:label "Weapon"@en ;
+        rdfs:sameAs "https://dbpedia.org/ontology/Weapon" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Arvala
+:Arvala rdf:type owl:NamedIndividual ,
+                 :Planet .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#CaraDune
+:CaraDune rdf:type owl:NamedIndividual ,
+                   :Character ;
+          :isPlayedBy :GinaCarano .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#DinDjarin
+:DinDjarin rdf:type owl:NamedIndividual ,
+                    :Character ;
+           :characterAppearsIn :Episode101 ;
+           :isPlayedBy :PedroPascal ;
+           :ownsVehicle :RazorCrest .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Disney
+:Disney rdf:type owl:NamedIndividual ,
+                 :VideoOnDemandService .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode100
+:Episode100 rdf:type owl:NamedIndividual ,
+                     :Episode ;
+            :isIntro "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode101
+:Episode101 rdf:type owl:NamedIndividual ,
+                     :Episode ;
+            :directedBy :JonFavreau .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode102
+:Episode102 rdf:type owl:NamedIndividual ,
+                     :Episode .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode103
+:Episode103 rdf:type owl:NamedIndividual ,
+                     :Episode .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode201
+:Episode201 rdf:type owl:NamedIndividual ,
+                     :Episode .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode202
+:Episode202 rdf:type owl:NamedIndividual ,
+                     :MiniEpisode .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#GinaCarano
+:GinaCarano rdf:type owl:NamedIndividual ,
+                     :Person .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Jawa1
+:Jawa1 rdf:type owl:NamedIndividual ,
+                :Jawa ;
+       :specieAppearsIn :Episode102 .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#JonFavreau
+:JonFavreau rdf:type owl:NamedIndividual ,
+                     :Person .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#JuggernautA5
+:JuggernautA5 rdf:type owl:NamedIndividual ,
+                       :Vehicle ;
+              :hasWheels "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Mustafar
+:Mustafar rdf:type owl:NamedIndividual ,
+                   :DwarfPlanet .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Mythrol
+:Mythrol rdf:type owl:NamedIndividual ,
+                  :Character ;
+         :isMainCharacter "false"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#PedroPascal
+:PedroPascal rdf:type owl:NamedIndividual ,
+                      :Actor ;
+             rdfs:sameAs "https://dbpedia.org/page/Pedro_Pascal" .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#RazorCrest
+:RazorCrest rdf:type owl:NamedIndividual ,
+                     :NabooN1Starfighter .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Season1
+:Season1 rdf:type owl:NamedIndividual ,
+                  :Season ;
+         :hasEpisode :Episode101 ,
+                     :Episode102 ,
+                     :Episode103 .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Season2
+:Season2 rdf:type owl:NamedIndividual ,
+                  :Season ;
+         :hasEpisode :Episode201 ,
+                     :Episode202 .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Tatooine
+:Tatooine rdf:type owl:NamedIndividual ,
+                   :Planet .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#TheMandalorian
+:TheMandalorian rdf:type owl:NamedIndividual ,
+                         :Series ;
+                :hasSeason :Season1 ,
+                           :Season2 ;
+                :isBroadcastedOn :Disney .
+
+
+###  http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Vibroblade
+:Vibroblade rdf:type owl:NamedIndividual ,
+                     :StabbingWeapon ;
+            :weaponAppearsIn :Episode103 .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+owl:topDataProperty rdfs:comment "Episode name" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Ardennian
+                :Bantha
+                :Droid
+                :Human
+                :Jawa
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#e> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#p> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#v> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Episode ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#e>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :isIntro ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#e> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> "true"^^xsd:boolean
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :MiniEpisode ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#e>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Vehicle ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#v>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasWheels ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#v> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> "true"^^xsd:boolean
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :LandVehicle ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#v>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Episode ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#e>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :directedBy ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#e> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#p>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Person ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Director ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
