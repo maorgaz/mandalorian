@@ -176,6 +176,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Ontology about the TV serie: The Mandalorian, created by Miguel Ángel Orgaz Salcedo"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian/1.0.0"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Actor",
