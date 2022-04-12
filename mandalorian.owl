@@ -10,6 +10,7 @@
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:the-mandalorian="http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian/1.0.0"/>
         <rdfs:comment>Ontology about the TV serie: The Mandalorian, created by Miguel Ángel Orgaz Salcedo</rdfs:comment>
     </owl:Ontology>
     
