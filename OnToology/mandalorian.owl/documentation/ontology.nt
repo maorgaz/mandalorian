@@ -1,0 +1,719 @@
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology about the TV serie: The Mandalorian, created by Miguel Ángel Orgaz Salcedo" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#appearsCharacter
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#appearsCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#appearsCharacter> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#characterAppearsIn> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#appearsCharacter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#appearsCharacter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Character> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#appearsCharacter> <http://www.w3.org/2000/01/rdf-schema#comment> "Which characters appear in an episode" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#appearsCharacter> <http://www.w3.org/2000/01/rdf-schema#label> "appearsCharacter"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#appearsSpecie
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#appearsSpecie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#appearsSpecie> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#specieAppearsIn> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#appearsSpecie> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#appearsSpecie> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Specie> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#appearsSpecie> <http://www.w3.org/2000/01/rdf-schema#comment> "Which species appear in an episode" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#appearsSpecie> <http://www.w3.org/2000/01/rdf-schema#label> "appearsSpecie"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#appearsWeapon
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#appearsWeapon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#appearsWeapon> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#weaponAppearsIn> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#appearsWeapon> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#appearsWeapon> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Weapon> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#appearsWeapon> <http://www.w3.org/2000/01/rdf-schema#comment> "Which weapons appear in an episode" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#appearsWeapon> <http://www.w3.org/2000/01/rdf-schema#label> "appearsWeapon"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#belongsTo
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#belongsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#belongsTo> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#ownsVehicle> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#belongsTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Vehicle> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#belongsTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Character> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#belongsTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Who owns a vehicle" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#belongsTo> <http://www.w3.org/2000/01/rdf-schema#label> "belongsTo"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#belongsToFaction
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#belongsToFaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#belongsToFaction> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isFactionOfCharacter> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#belongsToFaction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Character> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#belongsToFaction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Faction> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#belongsToFaction> <http://www.w3.org/2000/01/rdf-schema#comment> "To which faction a character belongs" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#belongsToFaction> <http://www.w3.org/2000/01/rdf-schema#label> "belongsToFaction"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#broadCastsSeries
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#broadCastsSeries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#broadCastsSeries> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isBroadcastedOn> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#broadCastsSeries> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Broadcast> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#broadCastsSeries> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Series> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#broadCastsSeries> <http://www.w3.org/2000/01/rdf-schema#comment> "What series a channel or service broadcasts" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#broadCastsSeries> <http://www.w3.org/2000/01/rdf-schema#label> "broadCastsSeries"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#characterAppearsIn
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#characterAppearsIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#characterAppearsIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Character> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#characterAppearsIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#characterAppearsIn> <http://www.w3.org/2000/01/rdf-schema#comment> "In which episode does a character appear" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#characterAppearsIn> <http://www.w3.org/2000/01/rdf-schema#label> "characterAppearsIn"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#directedBy
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#directedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#directedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#directs> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#directedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#directedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Person> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#directedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Who directed an episode" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#directedBy> <http://www.w3.org/2000/01/rdf-schema#label> "directedBy"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#directs
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#directs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#directs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Person> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#directs> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#directs> <http://www.w3.org/2000/01/rdf-schema#comment> "Which episode is directed by a person" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#directs> <http://www.w3.org/2000/01/rdf-schema#label> "directs"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasEpisode
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasEpisode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasEpisode> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isEpisodeOfSeason> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasEpisode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Season> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasEpisode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasEpisode> <http://www.w3.org/2000/01/rdf-schema#comment> "Which episodes belong to a season" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasEpisode> <http://www.w3.org/2000/01/rdf-schema#label> "hasEpisode"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasSeason
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasSeason> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isSeasonOfSeries> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasSeason> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Series> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasSeason> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Season> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasSeason> <http://www.w3.org/2000/01/rdf-schema#comment> "Which seasons belong to a series" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasSeason> <http://www.w3.org/2000/01/rdf-schema#label> "hasSeason"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isBroadcastedOn
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isBroadcastedOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isBroadcastedOn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Series> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isBroadcastedOn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Broadcast> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isBroadcastedOn> <http://www.w3.org/2000/01/rdf-schema#comment> "The series is broadcast on a television channel or video-on-demand service." .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isBroadcastedOn> <http://www.w3.org/2000/01/rdf-schema#label> "isBroadcastedOn"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isEpisodeOfSeason
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isEpisodeOfSeason> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isEpisodeOfSeason> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isEpisodeOfSeason> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Season> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isEpisodeOfSeason> <http://www.w3.org/2000/01/rdf-schema#comment> "Which season an episode belongs to" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isEpisodeOfSeason> <http://www.w3.org/2000/01/rdf-schema#label> "isEpisodeOfSeason"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isFactionOfCharacter
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isFactionOfCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isFactionOfCharacter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Faction> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isFactionOfCharacter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Character> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isFactionOfCharacter> <http://www.w3.org/2000/01/rdf-schema#comment> "Which characters belong to a faction" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isFactionOfCharacter> <http://www.w3.org/2000/01/rdf-schema#label> "isFactionOfCharacter"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isOfSpecie
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isOfSpecie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isOfSpecie> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isSpecieOf> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isOfSpecie> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Character> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isOfSpecie> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Specie> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isOfSpecie> <http://www.w3.org/2000/01/rdf-schema#comment> "What species is a character" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isOfSpecie> <http://www.w3.org/2000/01/rdf-schema#label> "isOfSpecie"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isPlayedBy
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isPlayedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isPlayedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#plays> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isPlayedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Character> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isPlayedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Actor> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isPlayedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "A character is played by an actor" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isPlayedBy> <http://www.w3.org/2000/01/rdf-schema#label> "isPlayedBy"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isSeasonOfSeries
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isSeasonOfSeries> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isSeasonOfSeries> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Season> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isSeasonOfSeries> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Series> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isSeasonOfSeries> <http://www.w3.org/2000/01/rdf-schema#comment> "To which series does a season belong" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isSeasonOfSeries> <http://www.w3.org/2000/01/rdf-schema#label> "isSeasonOfSeries"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isSpecieOf
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isSpecieOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isSpecieOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Specie> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isSpecieOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Character> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isSpecieOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Which characters belong to a species" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isSpecieOf> <http://www.w3.org/2000/01/rdf-schema#label> "isSpecieOf"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#ownsVehicle
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#ownsVehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#ownsVehicle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Character> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#ownsVehicle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Vehicle> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#ownsVehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "Which vehicle owns a character" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#ownsVehicle> <http://www.w3.org/2000/01/rdf-schema#label> "ownsVehicle"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#planetHasSpecie
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#planetHasSpecie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#planetHasSpecie> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#specieIsFromPlanet> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#planetHasSpecie> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Planet> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#planetHasSpecie> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Specie> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#planetHasSpecie> <http://www.w3.org/2000/01/rdf-schema#comment> "It has the species on a planet" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#planetHasSpecie> <http://www.w3.org/2000/01/rdf-schema#label> "planetHasSpecie"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#plays
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#plays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#plays> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Actor> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#plays> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Character> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#plays> <http://www.w3.org/2000/01/rdf-schema#comment> "An actor plays a character" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#plays> <http://www.w3.org/2000/01/rdf-schema#label> "plays"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#specieAppearsIn
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#specieAppearsIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#specieAppearsIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Specie> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#specieAppearsIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#specieAppearsIn> <http://www.w3.org/2000/01/rdf-schema#comment> "In which episode does a species appear" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#specieAppearsIn> <http://www.w3.org/2000/01/rdf-schema#label> "specieAppearsIn"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#specieIsFromPlanet
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#specieIsFromPlanet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#specieIsFromPlanet> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Specie> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#specieIsFromPlanet> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Planet> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#specieIsFromPlanet> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the planet of a species" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#specieIsFromPlanet> <http://www.w3.org/2000/01/rdf-schema#label> "specieIsFromPlanet"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#weaponAppearsIn
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#weaponAppearsIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#weaponAppearsIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Weapon> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#weaponAppearsIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#weaponAppearsIn> <http://www.w3.org/2000/01/rdf-schema#comment> "In which episode does a weapon appear" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#weaponAppearsIn> <http://www.w3.org/2000/01/rdf-schema#label> "weaponAppearsIn"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#characterName
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#characterName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#characterName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Character> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#characterName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#characterName> <http://www.w3.org/2000/01/rdf-schema#comment> "Character's name" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#characterName> <http://www.w3.org/2000/01/rdf-schema#label> "characterName"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#episodeName
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#episodeName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#episodeName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#episodeName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#episodeName> <http://www.w3.org/2000/01/rdf-schema#comment> "Episode name" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#episodeName> <http://www.w3.org/2000/01/rdf-schema#label> "episodeName"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasCreationDate
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasCreationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasCreationDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#SeriesComposition> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasCreationDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasCreationDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date on which the season or episode was made" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasCreationDate> <http://www.w3.org/2000/01/rdf-schema#label> "hasCreationDate"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasSurname
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasSurname> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasSurname> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Person> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasSurname> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasSurname> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the person's last name" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasSurname> <http://www.w3.org/2000/01/rdf-schema#label> "hasSurname"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasWheels
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasWheels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasWheels> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Vehicle> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasWheels> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasWheels> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates whether the vehicle has wheels or not" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasWheels> <http://www.w3.org/2000/01/rdf-schema#label> "hasWheels"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isIntro
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isIntro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isIntro> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isIntro> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isIntro> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates whether the episode is an introduction" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isIntro> <http://www.w3.org/2000/01/rdf-schema#label> "isIntro"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isMainCharacter
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isMainCharacter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isMainCharacter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Character> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isMainCharacter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isMainCharacter> <http://www.w3.org/2000/01/rdf-schema#comment> "He is a main character" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isMainCharacter> <http://www.w3.org/2000/01/rdf-schema#label> "isMainCharacter"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#vehicleName
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#vehicleName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#vehicleName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Vehicle> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#vehicleName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#vehicleName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of vehicle" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#vehicleName> <http://www.w3.org/2000/01/rdf-schema#label> "vehicleName"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Actor
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Actor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Actor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Person> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Actor> <http://www.w3.org/2000/01/rdf-schema#comment> "Person who appears in the series playing a character" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Actor> <http://www.w3.org/2000/01/rdf-schema#label> "Actor"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Ardennian
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Ardennian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Ardennian> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Specie> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Ardennian> <http://www.w3.org/2000/01/rdf-schema#comment> "The Ardennian species" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Ardennian> <http://www.w3.org/2000/01/rdf-schema#label> "Ardennian"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Bantha
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Bantha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Bantha> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Specie> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Bantha> <http://www.w3.org/2000/01/rdf-schema#comment> "The Bantha species" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Bantha> <http://www.w3.org/2000/01/rdf-schema#label> "Bantha"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Broadcast
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Broadcast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Broadcast> <http://www.w3.org/2000/01/rdf-schema#comment> "Where the series is broadcasted" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Broadcast> <http://www.w3.org/2000/01/rdf-schema#label> "Broadcast"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Character
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Actor> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isPlayedBy> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Character> <http://www.w3.org/2000/01/rdf-schema#comment> "Fictional characters in the series" .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Director
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Director> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Director> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Person> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Director> <http://www.w3.org/2000/01/rdf-schema#comment> "Person running the series" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Director> <http://www.w3.org/2000/01/rdf-schema#label> "Director"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Droid
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Droid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Droid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Specie> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Droid> <http://www.w3.org/2000/01/rdf-schema#comment> "All droids" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Droid> <http://www.w3.org/2000/01/rdf-schema#label> "Droid"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#DwarfPlanet
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#DwarfPlanet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#DwarfPlanet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Planet> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#DwarfPlanet> <http://www.w3.org/2000/01/rdf-schema#label> "DwarfPlanet"@en .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#DwarfPlanet> <http://www.w3.org/2000/01/rdf-schema#sameAs> "Planets with a radius smaller than 1000km" .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#SeriesComposition> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode> <http://www.w3.org/2000/01/rdf-schema#comment> "Episodes" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode> <http://www.w3.org/2000/01/rdf-schema#label> "Episode"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Explosive
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Explosive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Explosive> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Weapon> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Explosive> <http://www.w3.org/2000/01/rdf-schema#comment> "Explosive-type weapons appearing in the series" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Explosive> <http://www.w3.org/2000/01/rdf-schema#label> "Explosive"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Faction
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Faction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Faction> <http://www.w3.org/2000/01/rdf-schema#comment> "Factions or bands we can find (Resistance, Empire, Jedi, Mandalorians...)" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Faction> <http://www.w3.org/2000/01/rdf-schema#label> "Faction"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Firearm
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Firearm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Firearm> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Weapon> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Firearm> <http://www.w3.org/2000/01/rdf-schema#comment> "Firearms or laser weapons appearing in the series" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Firearm> <http://www.w3.org/2000/01/rdf-schema#label> "Firearm"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Firespray31
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Firespray31> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Firespray31> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#StarShip> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Firespray31> <http://www.w3.org/2000/01/rdf-schema#comment> "Star ships type FireSpray31" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Firespray31> <http://www.w3.org/2000/01/rdf-schema#label> "Firespray31"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#GiantPlanet
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#GiantPlanet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#GiantPlanet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Planet> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#GiantPlanet> <http://www.w3.org/2000/01/rdf-schema#label> "GiantPlanet"@en .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#GiantPlanet> <http://www.w3.org/2000/01/rdf-schema#sameAs> "Planets with a radius greater than 10000km" .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Human
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Human> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Human> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Specie> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Human> <http://www.w3.org/2000/01/rdf-schema#comment> "The Human species" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Human> <http://www.w3.org/2000/01/rdf-schema#label> "Human"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Jawa
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Jawa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Jawa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Specie> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Jawa> <http://www.w3.org/2000/01/rdf-schema#comment> "The Jawa species" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Jawa> <http://www.w3.org/2000/01/rdf-schema#label> "Jawa"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#K79S80
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#K79S80> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#K79S80> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#LandVehicle> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#K79S80> <http://www.w3.org/2000/01/rdf-schema#comment> "Land Vehicles type K79-S80" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#K79S80> <http://www.w3.org/2000/01/rdf-schema#label> "K79S80"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#LandVehicle
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#LandVehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#LandVehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Vehicle> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#LandVehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "Land vehicles appearing" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#LandVehicle> <http://www.w3.org/2000/01/rdf-schema#label> "LandVehicle"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#MiniEpisode
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#MiniEpisode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#MiniEpisode> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#MiniEpisode> <http://www.w3.org/2000/01/rdf-schema#label> "MiniEpisode"@en .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#MiniEpisode> <http://www.w3.org/2000/01/rdf-schema#sameAs> "An episode with a duration of less than 15 minutes" .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#NabooN1Starfighter
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#NabooN1Starfighter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#NabooN1Starfighter> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#StarShip> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#NabooN1Starfighter> <http://www.w3.org/2000/01/rdf-schema#comment> "Star ships type Naboo N-1 Starfighter" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#NabooN1Starfighter> <http://www.w3.org/2000/01/rdf-schema#label> "NabooN1Starfighter"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Person
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "Persons" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Person> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/Person" .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Planet
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Planet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Planet> <http://www.w3.org/2000/01/rdf-schema#comment> "Planets" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Planet> <http://www.w3.org/2000/01/rdf-schema#label> "Planet"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#SandCrawler
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#SandCrawler> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#SandCrawler> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#LandVehicle> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#SandCrawler> <http://www.w3.org/2000/01/rdf-schema#comment> "Land Vehicles type sand crawlers" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#SandCrawler> <http://www.w3.org/2000/01/rdf-schema#label> "SandCrawler"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Season
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Season> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Season> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#SeriesComposition> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Season> <http://www.w3.org/2000/01/rdf-schema#comment> "Seasons" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Season> <http://www.w3.org/2000/01/rdf-schema#label> "Season"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Series
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Series> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Series> <http://www.w3.org/2000/01/rdf-schema#comment> "Class representing the television series" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Series> <http://www.w3.org/2000/01/rdf-schema#label> "Series"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#SeriesComposition
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#SeriesComposition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#SeriesComposition> <http://www.w3.org/2000/01/rdf-schema#comment> "What parts make up the series" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#SeriesComposition> <http://www.w3.org/2000/01/rdf-schema#label> "SeriesComposition"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Specie
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Specie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Specie> <http://www.w3.org/2000/01/rdf-schema#comment> "Existing species" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Specie> <http://www.w3.org/2000/01/rdf-schema#label> "Specie"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Speeder
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Speeder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Speeder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#LandVehicle> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Speeder> <http://www.w3.org/2000/01/rdf-schema#comment> "Land Vehicles type speeders" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Speeder> <http://www.w3.org/2000/01/rdf-schema#label> "Speeder"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#StabbingWeapon
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#StabbingWeapon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#StabbingWeapon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Weapon> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#StabbingWeapon> <http://www.w3.org/2000/01/rdf-schema#comment> "Stabbing weapons appearing in the series" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#StabbingWeapon> <http://www.w3.org/2000/01/rdf-schema#label> "StabbingWeapon"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#StarShip
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#StarShip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#StarShip> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Vehicle> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#StarShip> <http://www.w3.org/2000/01/rdf-schema#comment> "Star ships appearing" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#StarShip> <http://www.w3.org/2000/01/rdf-schema#label> "StarShip"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#TelevisionChannel
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#TelevisionChannel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#TelevisionChannel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Broadcast> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#TelevisionChannel> <http://www.w3.org/2000/01/rdf-schema#comment> "Television channels where the series is broadcasted" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#TelevisionChannel> <http://www.w3.org/2000/01/rdf-schema#label> "TelevisionChannel"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Vehicle
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Vehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Vehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "Vehicles appearing in The Mandalorian" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Vehicle> <http://www.w3.org/2000/01/rdf-schema#label> "Vehicle"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#VideoOnDemandService
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#VideoOnDemandService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#VideoOnDemandService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Broadcast> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#VideoOnDemandService> <http://www.w3.org/2000/01/rdf-schema#comment> "Video-on-demand services where the series is broadcasted" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#VideoOnDemandService> <http://www.w3.org/2000/01/rdf-schema#label> "VideoOnDemandService"@en .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Weapon
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Weapon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Weapon> <http://www.w3.org/2000/01/rdf-schema#comment> "Weapons appearing" .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Weapon> <http://www.w3.org/2000/01/rdf-schema#label> "Weapon"@en .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Weapon> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/Weapon" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Arvala
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Arvala> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Arvala> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Planet> .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#CaraDune
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#CaraDune> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#CaraDune> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Character> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#CaraDune> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isPlayedBy> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#GinaCarano> .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#DinDjarin
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#DinDjarin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#DinDjarin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Character> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#DinDjarin> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#characterAppearsIn> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode101> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#DinDjarin> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isPlayedBy> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#PedroPascal> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#DinDjarin> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#ownsVehicle> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#RazorCrest> .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Disney
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Disney> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Disney> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#VideoOnDemandService> .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode100
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode100> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode100> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isIntro> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode101
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode101> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode101> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode101> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#directedBy> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#JonFavreau> .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode102
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode102> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode102> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode> .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode103
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode103> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode103> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode> .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode201
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode201> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode201> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode> .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode202
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode202> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode202> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#MiniEpisode> .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#GinaCarano
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#GinaCarano> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#GinaCarano> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Person> .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Jawa1
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Jawa1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Jawa1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Jawa> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Jawa1> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#specieAppearsIn> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode102> .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#JonFavreau
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#JonFavreau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#JonFavreau> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Person> .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#JuggernautA5
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#JuggernautA5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#JuggernautA5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Vehicle> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#JuggernautA5> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasWheels> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Mustafar
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Mustafar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Mustafar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#DwarfPlanet> .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Mythrol
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Mythrol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Mythrol> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Character> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Mythrol> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isMainCharacter> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#PedroPascal
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#PedroPascal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#PedroPascal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Actor> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#PedroPascal> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Pedro_Pascal" .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#RazorCrest
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#RazorCrest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#RazorCrest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#NabooN1Starfighter> .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Season1
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Season1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Season1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Season> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Season1> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasEpisode> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode101> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Season1> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasEpisode> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode102> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Season1> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasEpisode> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode103> .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Season2
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Season2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Season2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Season> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Season2> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasEpisode> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode201> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Season2> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasEpisode> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode202> .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Tatooine
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Tatooine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Tatooine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Planet> .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#TheMandalorian
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#TheMandalorian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#TheMandalorian> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Series> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#TheMandalorian> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasSeason> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Season1> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#TheMandalorian> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasSeason> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Season2> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#TheMandalorian> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isBroadcastedOn> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Disney> .
+# 
+# http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Vibroblade
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Vibroblade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Vibroblade> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#StabbingWeapon> .
+<http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Vibroblade> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#weaponAppearsIn> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode103> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.w3.org/2002/07/owl#topDataProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Episode name" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid2 <http://www.w3.org/2002/07/owl#members> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Jawa> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Human> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Droid> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Bantha> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Ardennian> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#v> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid17 <http://www.w3.org/2003/11/swrl#body> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid19 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#e> .
+_:genid19 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#isIntro> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#e> .
+_:genid21 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid17 <http://www.w3.org/2003/11/swrl#head> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#e> .
+_:genid23 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#MiniEpisode> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid24 <http://www.w3.org/2003/11/swrl#body> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid26 .
+_:genid26 <http://www.w3.org/2003/11/swrl#argument2> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid26 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#v> .
+_:genid26 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#hasWheels> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid28 .
+_:genid28 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#v> .
+_:genid28 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Vehicle> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid24 <http://www.w3.org/2003/11/swrl#head> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid30 .
+_:genid30 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#v> .
+_:genid30 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#LandVehicle> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid8 <http://www.w3.org/2003/11/swrl#body> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid10 .
+_:genid10 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid10 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Person> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid12 .
+_:genid12 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#p> .
+_:genid12 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#e> .
+_:genid12 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#directedBy> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid14 .
+_:genid14 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#e> .
+_:genid14 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Episode> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid8 <http://www.w3.org/2003/11/swrl#head> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid16 .
+_:genid16 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid16 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/migue/ontologies/2022/3/the-mandalorian#Director> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
